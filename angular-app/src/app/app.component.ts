@@ -10,7 +10,9 @@ export class AppComponent {
   cor = 'vermelho';
   nome = 'Kaique';
   valorDigitado: any;
-  resultado!: boolean;;
+  resultado!: boolean;
+  cpfDigitado: string = '';
+  msgCpf: string = '';
 
   // botaoClick(){
   //   alert("Uma mensagem");
@@ -54,4 +56,15 @@ export class AppComponent {
     if (Resto != parseInt(strCPF.substring(10, 11))) return false;
     return true;
   }
+
+  onCpfBlur(){
+    let cpfValido = this.testaCPF(this.cpfDigitado);
+
+    this.msgCpf = (cpfValido ? "CPF é valido": "CPF não é valido");
+    if(this.cpfDigitado == ''){
+      this.msgCpf = ''
+    }
+  }
+
 }
+

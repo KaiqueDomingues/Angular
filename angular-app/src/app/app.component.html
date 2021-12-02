@@ -1,7 +1,5 @@
 <h2>Curso de Angular</h2>
 
-<app-meu-primeiro></app-meu-primeiro>
-
 {{ title }}
 
 <p class="{{cor}}">Meu Paragrafo</p>
@@ -25,4 +23,17 @@
 
 <p>
   {{resultado}}
+</p>
+
+<p>
+  <label>CPF</label>
+  <input type="text" [(ngModel)] = "cpfDigitado" (blur)="onCpfBlur()">
+</p>
+
+<p>
+  {{msgCpf}}
+</p>
+
+<p>
+  <app-meu-primeiro></app-meu-primeiro>
 </p>

@@ -5,16 +5,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
+import { UsuariosModule } from './usuarios/usuarios.module';
+
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ListarPokemonComponent } from './pokemon/listar-pokemon/listar-pokemon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MeuPrimeiroComponent
+    MeuPrimeiroComponent,
+    ListarPokemonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    UsuariosModule,
+    TooltipModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
