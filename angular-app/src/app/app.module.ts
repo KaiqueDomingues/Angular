@@ -8,20 +8,17 @@ import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { UsuariosModule } from './usuarios/usuarios.module';
 
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
-import { ListarPokemonComponent } from './pokemon/listar-pokemon/listar-pokemon.component';
-
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
-    ListarPokemonComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     UsuariosModule,
-    TooltipModule.forRoot()
+    TooltipModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
