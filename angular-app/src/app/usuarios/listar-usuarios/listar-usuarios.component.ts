@@ -9,7 +9,7 @@ export class ListarUsuariosComponent implements OnInit {
 
   usuarios = [
     { nome: 'Kaique',sobrenome: 'Freitas', idade:25 },
-    {nome: 'Mirela', sobrenome: 'Sato', idade: 14 }
+    { nome: 'Mirela', sobrenome: 'Sato', idade: 14 }
   ];
 
   constructor() { }
