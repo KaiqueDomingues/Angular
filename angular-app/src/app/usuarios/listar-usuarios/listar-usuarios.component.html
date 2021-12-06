@@ -5,14 +5,16 @@
         <th>ID</th>
         <th>Nome</th>
         <th>Sobrenome</th>
+        <th>Nascimento</th>
         <th>Idade</th>
         <th>Mostrar dados</th>
     </tr>
 
     <tr *ngFor="let dados of usuarios; let i = index">
         <td>{{ i + 1}}</td>
-        <td>{{dados.nome}}</td>
+        <td>{{dados.nome | uppercase}}</td>
         <td>{{dados.sobrenome}}</td>
+        <td>{{dados.nascimento | date: 'dd/MM/yyyy'}}</td>
         <td>
             <span *ngIf= "dados.idade <= 15" style="background-color: blue;">{{ dados.idade }}</span>
             <span *ngIf="dados.idade >15" style="background-color: red;">{{ dados.idade }}</span>
@@ -36,3 +38,7 @@
 >
 
 </app-detalhe-usuario>
+
+<p>
+    {{diaDeHoje | date: 'dd/MM/yyyy'}}
+</p>

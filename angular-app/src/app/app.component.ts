@@ -14,6 +14,11 @@ export class AppComponent {
   cpfDigitado: string = '';
   msgCpf: string = '';
 
+  public mask: any = {
+    mask: '+{55} (00) 00000-0000',
+    lazy: false
+  };
+
   // botaoClick(){
   //   alert("Uma mensagem");
   //   this.cor = (this.cor == "azul" ? "vermelho": "azul");
