@@ -1,7 +1,7 @@
-<div class="card" *ngIf="usuarioSelecionadoDetalhe">
+<div class="card container" *ngIf="usuarioSelecionadoDetalhe">
     <div class="card-body">
         
-        <p class="card-text">Nome : {{usuarioSelecionadoDetalhe.nome}}</p>
+        <p class="card-text" appGrifaTexto>Nome : {{usuarioSelecionadoDetalhe.nome}}</p>
         <p class="card-text">Sobrenome : {{usuarioSelecionadoDetalhe.sobrenome}}</p>
         <p class="card-text"> Idade :
             <button class="btn btn-primary" (click)="onLessClick()">-</button>

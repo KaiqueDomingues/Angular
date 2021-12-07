@@ -18,6 +18,10 @@ export class ListarPokemonsComponent implements OnInit {
     this.pokemonSelecionadoPai = results;
   }
 
+  receberIdFilho(variavel : any){
+    alert("O ID do Filho é " + variavel)
+  }
+
   pokemons = {
     count: 1118,
     next: "https://pokeapi.co/api/v2/pokemon?offset=300&limit=100",

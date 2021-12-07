@@ -10,6 +10,7 @@ import { UsuariosModule } from './usuarios/usuarios.module';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import {IMaskModule} from 'angular-imask';
 import { ListarPokemonsModule } from './pokemons/listar-pokemons.module';
+import { ProfessoresModule } from './professores/professores.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ListarPokemonsModule } from './pokemons/listar-pokemons.module';
     UsuariosModule,
     TooltipModule.forRoot(),
     IMaskModule,
-    ListarPokemonsModule
+    ListarPokemonsModule,
+    ProfessoresModule
   ],
   providers: [],
   bootstrap: [AppComponent]

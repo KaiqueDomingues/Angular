@@ -12,8 +12,8 @@ export class ListarUsuariosComponent implements OnInit {
   diaDeHoje = new Date;
   
   usuarios = [
-    { nome: "Kaique", sobrenome: "Freitas", idade: 25, nascimento: 1995-12-30 },
-    { nome: "Mirela", sobrenome: "Sato", idade: 15, nascimento: 1997/3/20 },
+    { nome: "Kaique", sobrenome: "Freitas", idade: 25, nascimento: '1995-12-30', cpf:'45177468879', investimento: 5000 },
+    { nome: "Mirela", sobrenome: "Sato", idade: 15, nascimento: '1997/3/20', cpf: '94287088018', investimento: 18000 },
   ];
 
   constructor() {

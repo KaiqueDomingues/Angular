@@ -1,11 +1,13 @@
-<p>listar-usuarios works!</p>
+<p appGrifaTexto>listar-usuarios works!</p>
 
-<table class="tablet">
+<table class="table container">
     <tr>
         <th>ID</th>
         <th>Nome</th>
         <th>Sobrenome</th>
         <th>Nascimento</th>
+        <th>CPF</th>
+        <th>investimento</th>
         <th>Idade</th>
         <th>Mostrar dados</th>
     </tr>
@@ -15,6 +17,8 @@
         <td>{{dados.nome | uppercase}}</td>
         <td>{{dados.sobrenome}}</td>
         <td>{{dados.nascimento | date: 'dd/MM/yyyy'}}</td>
+        <td>{{dados.cpf | cpf }}</td>
+        <td>{{dados.investimento | currency: 'BRL'}}</td>
         <td>
             <span *ngIf= "dados.idade <= 15" style="background-color: blue;">{{ dados.idade }}</span>
             <span *ngIf="dados.idade >15" style="background-color: red;">{{ dados.idade }}</span>
