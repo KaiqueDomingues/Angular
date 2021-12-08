@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ProfessoresService } from '../professores.service';
 
 @Component({
   selector: 'app-listar-professores',
@@ -11,12 +11,12 @@ export class ListarProfessoresComponent implements OnInit {
 
   professores: any = null;
 
-  constructor(private httpCliente:HttpClient) {
+  constructor(private professoresService:ProfessoresService) {
 
    }
 
   ngOnInit(): void {
-    this.httpCliente.get('http://cursos.grandeporte.com.br:8080/professores')
+    this.professoresService.getAllpro()
       .subscribe(
         (dados)=>{
           console.log(dados)
