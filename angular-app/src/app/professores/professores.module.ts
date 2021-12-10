@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListarProfessoresComponent } from './listar-professores/listar-professores.component';
-import { HttpClientModule } from '@angular/common/http'
+import { ListarProfessoresComponent } from "./listar-professores/ListarProfessoresComponent";
 import { SharedModule } from '../shared/shared.module';
+import { ProfessoresRoutingModule } from './professores-routing.module';
 
 
 @NgModule({
@@ -11,6 +11,7 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
+    ProfessoresRoutingModule,
     //HttpClientModule,
     SharedModule
   ],

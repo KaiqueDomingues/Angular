@@ -4,6 +4,7 @@ import { DetalhesPokemonsComponent } from './detalhes-pokemons/detalhes-pokemons
 import { ListarPokemonsComponent } from './listar-pokemons/listar-pokemons.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { SharedModule } from '../shared/shared.module';
+import { PokemonsRoutingModule } from './pokemons-routing.module';
 
 
 
@@ -15,7 +16,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     //HttpClientModule,
-    SharedModule
+    SharedModule,
+    PokemonsRoutingModule
   ],
   exports: [
     ListarPokemonsComponent

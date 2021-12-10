@@ -5,6 +5,7 @@ import { DetalheUsuarioComponent } from './detalhe-usuario/detalhe-usuario.compo
 //import { CpfPipe } from './cpf.pipe';
 //import { GrifaTextoDirective } from './grifa-texto.directive';
 import { SharedModule } from '../shared/shared.module';
+import { UsuariosRoutingModule } from './usuarios-routing.module';
 
 
 
@@ -17,7 +18,8 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    UsuariosRoutingModule
   ],
   exports:[
     ListarUsuariosComponent

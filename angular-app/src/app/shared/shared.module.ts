@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GrifaTextoDirective } from './diretivas/grifa-texto.directive';
 import { CpfPipe } from './pipes/cpf.pipe';
 
@@ -15,13 +15,15 @@ import { CpfPipe } from './pipes/cpf.pipe';
   imports: [
     CommonModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports:[
     HttpClientModule,
     FormsModule,
     GrifaTextoDirective,
-    CpfPipe
+    CpfPipe,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }
